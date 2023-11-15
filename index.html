@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sri Durga Canteen Menu</title>
+        <meta name="description" content="Complete Menu of food and drinks available at Shri Durga Canteen.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+        <script>
+        function showMenu(menuType) {
+            //Hide all info
+      const menuContainers = document.getElementsByClassName('menu-items');
+      for (let i = 0; i < menuContainers.length; i++) {
+        menuContainers[i].classList.remove('active');
+      }
+      //show selected button info
+      const selectedMenu = document.getElementById(menuType + '-menu');
+      selectedMenu.classList.add('active');
+    }
+    </script>
+    </head>
+        <body>
+            <nav>
+                <ul class="nav-links">
+                    <li >Welcome to the Nitte Canteen</li>
+                    <!--<li class><a href="#About">About</a></li>
+                    <li class><a href="#Contact">Contact</a></li> -->
+                </ul>
+                </nav>
+    
+            <div class="bgimg">
+            <!-- <header>
+                <h1 class="heading">Shri Durga Canteen</h1>
+            </header> -->
+            </div>
+
+            <nav id="menu">
+                <ul class="menu-categories">
+                    <li><div><img src="Dosa.jpg"><button class="button" onclick="showMenu('dosa')">Dosa</button>
+                    </div></li>
+                    <li><div><img src="meals.jpg"><button class="button" onclick="showMenu('meals')">Meals</button>
+                    </div></li>
+                    <li><div><img src="southindian.jpg"><button class="button" onclick="showMenu('south')">South Indian</button>
+                    </div></li>
+                    <li><div><img src="snacks.webp"><button class="button" onclick="showMenu('snacks')">Snacks</button>
+                    </div></li>
+                    <li><div><img src="Gravy.jpg"><button class="button" onclick="showMenu('gravys')">Gravys</button>
+                    </div></li>
+                    <li><div><img src="Chinese.jpg"><button class="button" onclick="showMenu('chinese')">Chinese</button>
+                    </div></li>
+                    <li><div><img src="chaats.jpg"><button class="button" onclick="showMenu('chaats')">Chaats</button>
+                    </div></li>
+                    <li><div><img src="Milkshake.jpg"><button class="button" onclick="showMenu('drinks')">Drinks</button>
+                    </div></li>
+                    <li><div><img src="deserts.jpg"><button class="button" onclick="showMenu('deserts')">Deserts</button>
+                    </div></li>
+                </ul>
+            </nav>
+            
+            <div id="dosa-menu" class="menu-items">
+                <table>
+                    <tr>
+                        <th colspan="5">Dosa</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Plain Dosa</td>
+                        <td style="text-align: center;">26</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Uddina Dosa(Sada Dosa)</td>
+                        <td style="text-align: center;">30</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Neer Dosa</td>
+                        <td style="text-align: center;">30</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Masala Dosa</td>
+                        <td style="text-align: center;">40</td>
+                    </tr>
+                </table>
+                
+                <table style="margin-top: 10%;">
+                    <tr>
+                        <th colspan="5">Special Dosa</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Mysuru Masala</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Paneer Masala</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Palak Masala</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Mushroom Masala</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Open Masala</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Rava Masala</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Spring Masala</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Onion Rava Masala</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Onion Uttappa</td>
+                        <td style="text-align: center;">42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Tomato Onion Uttappa</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Paneer Uttappa</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Tomato Omlette</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Garlic Masala</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Schezwan Masala</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Palak Paneer</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Set Dosa</td>
+                        <td style="text-align: center;">45</td>
+                    </tr>
+                </table>
+                <!-- <div class="row">
+                    <div class="column">
+                <h4>Breakfast</h4>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+                </div>
+                <div class="column">
+                    <h4>Rate</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                </div> -->
+            </div>
+            
+            <div id="meals-menu" class="menu-items">
+                <table>
+                    <tr>
+                        <th colspan="5">Meals</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Meals</td>
+                        <td style="text-align: center;">50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Veg Pulao</td>
+                        <td style="text-align: center;">45</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="south-menu" class="menu-items">
+                <table>
+                    <tr>
+                        <th colspan="5">South-Indian Snacks</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Idli Sambar(2 Idli)</td>
+                        <td style="text-align: center;">21</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Vada Sambar(1 Vada)</td>
+                        <td style="text-align: center;">21</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Ambade Sambar(1 no.)</td>
+                        <td style="text-align: center;">21</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Dahi Vada(1 Vada)</td>
+                        <td style="text-align: center;">23</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Moong Avalakki</td>
+                        <td style="text-align: center;">26</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Kadle Avalakki</td>
+                        <td style="text-align: center;">26</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Upma Avalakki</td>
+                        <td style="text-align: center;">26</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Idli Sambar(3 Idli)</td>
+                        <td style="text-align: center;">32</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Idli Vada(Single)</td>
+                        <td style="text-align: center;">32</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Chapati Kurma</td>
+                        <td style="text-align: center;">35</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Pav Bhaji(2 paav)</td>
+                        <td style="text-align: center;">37</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Puri Bhaji</td>
+                        <td style="text-align: center;">37</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Pundi Gassi</td>
+                        <td style="text-align: center;">37</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Aloo Paratha</td>
+                        <td style="text-align: center;">40</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Vada Sambar(2 Vada)</td>
+                        <td style="text-align: center;">42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Pav Bhaji(3 paav)</td>
+                        <td style="text-align: center;">42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Parota Kurma(2 no.)</td>
+                        <td style="text-align: center;">42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Samosa(2 no.)</td>
+                        <td style="text-align: center;">42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Cutlet(2 no.)</td>
+                        <td style="text-align: center;">42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Ambade Sambar(2 no.)</td>
+                        <td style="text-align: center;">42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Dahi Vada(2 Vada)</td>
+                        <td style="text-align: center;">45</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Chole Bhature</td>
+                        <td style="text-align: center;">47</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Extra Paratha</td>
+                        <td style="text-align: center;">10</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="snacks-menu" class="menu-items">
+                <table>
+                    <tr>
+                        <th colspan="5">Snacks</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Buns(1 no.)</td>
+                        <td style="text-align: center;">16</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Biscuit Roti(1 no.)</td>
+                        <td style="text-align: center;">16</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Veg Bonda(1 no.)</td>
+                        <td style="text-align: center;">16</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Alu Bonda(1 no.)</td>
+                        <td style="text-align: center;">16</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Chattambade(1 no.)</td>
+                        <td style="text-align: center;">16</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Goli Baje</td>
+                        <td style="text-align: center;">25</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Podi</td>
+                        <td style="text-align: center;">25</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Mirchi Podi</td>
+                        <td style="text-align: center;">25</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Buns(2 no.)</td>
+                        <td style="text-align: center;">32</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Biscuit Roti(2 no.)</td>
+                        <td style="text-align: center;">32</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Sanjeera</td>
+                        <td style="text-align: center;">32</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Veg Bonda(2 no.)</td>
+                        <td style="text-align: center;">32</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Alu Bonda(2 no.)</td>
+                        <td style="text-align: center;">32</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Chattambade(2 no.)</td>
+                        <td style="text-align: center;">32</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Onion Pakoda</td>
+                        <td style="text-align: center;">37</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="gravys-menu" class="menu-items">
+                <table>
+                    <tr>
+                        <th colspan="5">Gravys</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Paneer Butter Masala</td>
+                        <td style="text-align: center;">80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Paneer Tikka Masala</td>
+                        <td style="text-align: center;">80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Paneer Chingari</td>
+                        <td style="text-align: center;">80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Paneer Burji</td>
+                        <td style="text-align: center;">80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Paneer Kohlapuri</td>
+                        <td style="text-align: center;">80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Shahi Paneer</td>
+                        <td style="text-align: center;">80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Paneer Navaratna Kurma</td>
+                        <td style="text-align: center;">80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Mushroom Makhanwala</td>
+                        <td style="text-align: center;">80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">2 Paratha + Any Gravy Above</td>
+                        <td style="text-align: center;">95</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Extra Paratha</td>
+                        <td style="text-align: center;">10</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="chinese-menu" class="menu-items">
+                <table>
+                    <tr>
+                        <th colspan="5">Chinese</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Veg Fried Rice</td>
+                        <td style="text-align: center;">63</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Veg Noodles</td>
+                        <td style="text-align: center;">63</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Paneer Fried Rice</td>
+                        <td style="text-align: center;">74</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Ghee Rice</td>
+                        <td style="text-align: center;">74</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Jeera Rice</td>
+                        <td style="text-align: center;">74</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Veg Rice Manchurian</td>
+                        <td style="text-align: center;">74</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Gobi Manchurian</td>
+                        <td style="text-align: center;">74</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Mushroom Fried Rice</td>
+                        <td style="text-align: center;">74</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Triple Fried Rice</td>
+                        <td style="text-align: center;">74</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Mixed Fried Rice</td>
+                        <td style="text-align: center;">74</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Veg Biryani</td>
+                        <td style="text-align: center;">74</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Mushroom Manchurian</td>
+                        <td style="text-align: center;">84</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Paneer Machurian</td>
+                        <td style="text-align: center;">100</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="chaats-menu" class="menu-items">
+                <table>
+                    <tr>
+                        <th colspan="5">Chaats</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Vada Paav</td>
+                        <td style="text-align: center;">20</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Sev Puri</td>
+                        <td style="text-align: center;">37</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Papdi Chaat</td>
+                        <td style="text-align: center;">37</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Bhel Puri</td>
+                        <td style="text-align: center;">37</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Charmuri</td>
+                        <td style="text-align: center;">37</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Pani Puri</td>
+                        <td style="text-align: center;">37</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Masala Puri</td>
+                        <td style="text-align: center;">42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Samosa Chaat</td>
+                        <td style="text-align: center;">42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Misaal Paav</td>
+                        <td style="text-align: center;">42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Dahi Puri</td>
+                        <td style="text-align: center;">47</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Dahi Sev Puri</td>
+                        <td style="text-align: center;">47</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Dahi Papdi Chaat</td>
+                        <td style="text-align: center;">47</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="drinks-menu" class="menu-items">
+                <table>
+                    <tr>
+                        <th colspan="5">Juices</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Lime Juice</td>
+                        <td style="text-align: center;">26</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Watermelon</td>
+                        <td style="text-align: center;">47</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Pineapple</td>
+                        <td style="text-align: center;">47</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Musumbi</td>
+                        <td style="text-align: center;">47</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Orange Juice</td>
+                        <td style="text-align: center;">47</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Fruit Punch</td>
+                        <td style="text-align: center;">60</td>
+                    </tr>
+                </table>
+
+                <table style="margin-top: 10%;">
+                    <tr>
+                        <th colspan="5">Milkshakes</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Cold Coffee</td>
+                        <td style="text-align: center;">42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Oreo</td>
+                        <td style="text-align: center;">53</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Chocolate</td>
+                        <td style="text-align: center;">53</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Chikku</td>
+                        <td style="text-align: center;">53</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Muskmelon</td>
+                        <td style="text-align: center;">53</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Pista</td>
+                        <td style="text-align: center;">53</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Strawberry</td>
+                        <td style="text-align: center;">53</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Mango</td>
+                        <td style="text-align: center;">53</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Vanilla</td>
+                        <td style="text-align: center;">53</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="deserts-menu" class="menu-items">
+                <table>
+                    <tr>
+                        <th colspan="5">Sweets</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Gulaab Jamun(1 no.)</td>
+                        <td style="text-align: center;">16</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Gulaab Jamun(2 no.)</td>
+                        <td style="text-align: center;">32</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Sheera</td>
+                        <td style="text-align: center;">35</td>
+                    </tr>
+                </table>
+                <table style="margin-top: 10%;">
+                    <tr>
+                        <th colspan="5">Ice Cream</th>
+                        <th style="text-align: center;">Rate</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Vanilla Sunday</td>
+                        <td style="text-align: center;">55</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Fruit Salad</td>
+                        <td style="text-align: center;">55</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Chocolate Sunday</td>
+                        <td style="text-align: center;">60</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Mix Sunday</td>
+                        <td style="text-align: center;">60</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Fruit Salad with Ice Cream</td>
+                        <td style="text-align: center;">65</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Gudbud</td>
+                        <td style="text-align: center;">75</td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+            
+            <!-- <section class="menu">
+                <div class="menu-item">
+                    
+                    <div class="menu-item">
+                        <h2>Milkshake</h2>
+                        <p>Refreshing  drink.</p>
+                        <p class="price">Price: Rs.50</p>
+                    </div>
+                </div>
+                <div class="menu-items">
+                        <h2>Dosa</h2>
+                        <p>South Indian crepe made from rice batter.</p>
+                        <p class="price">Rs.40</p>
+                
+                </div>
+            </section> -->
+        
+            <div class="contact">
+                <p>If you would like to make any suggestions on further improvements to this webpage or the menu list, please do contact us at: 4nm21is203@nmamit.in</li>
+            </div>
+        </body>       
+</html>
